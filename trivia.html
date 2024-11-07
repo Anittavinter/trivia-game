@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        #question {
+            font-size: 1.5em;
+            margin: 20px 0;
+        }
+
+        #answer {
+            padding: 8px;
+            font-size: 1em;
+        }
+
+        button {
+            padding: 10px;
+            margin: 5px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+
+        #feedback {
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trivia Game</h1>
+    <div id="question">Click "New Question" to start the game</div>
+    <input id="answer" type="text" placeholder="Your answer here">
+    <button id="questionBtn">New Question</button>
+    <button id="answerBtn">Submit Answer</button>
+    <div id="feedback"></div>
+    <script src="questions.js"></script> <!-- Link to JSON data -->
+    <script src="trivia.js"></script> <!-- Link to JavaScript file -->
+</body>
+</html>
